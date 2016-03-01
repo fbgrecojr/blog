@@ -1,0 +1,18 @@
+{
+    "name": "fbgrecojr",
+    "version": "v0.0.1",
+    "description": "this is my personal api gateway",
+    "keywords": [
+        "api",
+        "web service"
+    ],
+    "homepage": "https://github.com/fbgrecojr/personal_api_gateway",
+    "bugs": "https://github.com/fbgrecojr/personal_api_gateway/issues",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "~4.13.4",
+        "twilio": "~2.9.0"
+    }
+}
