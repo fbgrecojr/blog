@@ -1,18 +1,15 @@
 {
-    "name": "fbgrecojr",
+    "name": "fbgrecojr_blog",
     "version": "v0.0.1",
-    "description": "this is my personal api gateway",
+    "description": "Personal Blog of Frank B Greco Jr",
     "keywords": [
-        "api",
-        "web service"
+        "blog"
     ],
-    "homepage": "https://github.com/fbgrecojr/personal_api_gateway",
-    "bugs": "https://github.com/fbgrecojr/personal_api_gateway/issues",
+    "homepage": "https://github.com/fbgrecojr/blog",
+    "bugs": "https://github.com/fbgrecojr/blog/issues",
     "scripts": {
         "start": "node server.js"
     },
     "dependencies": {
-        "express": "~4.13.4",
-        "twilio": "~2.9.0"
-    }
+        "express": "~4.13.4",    }
 }
