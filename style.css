@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Royal-Serif';
+  src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf'); /* IE9 Compat Modes */
+       url('./fonts/Noto_Sans/NotoSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Roboto-Mono';
+  src: url('./fonts/Roboto_Mono/RobotoMono-Regular.ttf'); /* IE9 Compat Modes */
+       url('./fonts/Roboto_Mono/RobotoMono-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background: #000 url(./images/background3.jpg) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+header {
+	height: 10%;
+	text-align: center;
+	padding: 1em;
+	font-family: 'Roboto-Mono';
+	color: black;
+}
+
+.title {
+	background: #000 url(./images/wood2.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+    background-size: cover;
+	padding: 1em;
+	height: 100%;
+}
+
+.blog_item {
+	position: absolute;
+}
+
+#blog-item-area {
+	padding: 1em;
+	color: white;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.input {
+	background: #000 url(./images/grey.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+    background-size: cover;
+	padding: 1em;
+	margin-bottom: 3%;
+}
+
+.post {
+	background: #000 url(./images/grey3.png) center center fixed no-repeat;
+	-moz-background-size: cover;
+    background-size: cover;
+    padding: 1em;
+	margin-bottom: 3%;
+	color: white;
+	font-family: 'Royal-Serif';
+}
+
+.content {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 0.5em;
+	background-color: rgba(0,0,0,0.8);
+	color: rgba(255,255,255,0.8);
+	font-size: 1.25em;
+}
+
+textarea {
+	resize: none;
+}
+
+#title {
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Royal-Serif';
+	margin-bottom: 3%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.post-title {
+	width: 80%;
+	height: 100%;
+	font-weight: bold;
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+
+.post-content {
+	width: 100%;
+	padding: 0.5em;
+	font-size: 1.20em;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.date {
+	width: 20%;
+	padding: 0.5em;
+	font-size: 1.25em;
+}
