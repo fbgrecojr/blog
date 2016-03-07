@@ -10,12 +10,9 @@
        url('./fonts/Roboto_Mono/RobotoMono-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
-* {
+*, *:after, *:before {
 	padding: 0;
 	margin: 0;
-}
-
-*, *:after, *:before {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

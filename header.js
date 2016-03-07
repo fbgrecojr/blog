@@ -31,7 +31,6 @@
 
 		myHeader = new HeaderView({
 			model: header,
-			tag: 'div',
 			className: 'title'
 		});
 

@@ -5,21 +5,14 @@ var   express   = require('express'),
 
 app.use(express.static(__dirname + '/'));
 
-/*app.get('/', function(req, res){
-    var options = {
-      root: __dirname + '/'
-    };
+app.put('/blog', function(req, res){
+  console.log('put was called');
+  res.sendStatus(200);
+});
 
-    res.sendFile('index.html', options, function (err) {
-      if (err) {
-        console.log(err);
-        res.status(err.status).end();
-      }
-      else {
-        console.log('Sent: index.html');
-      }
-    });
-});*/
+app.post('/blog', function(req, res){
+  console.log('post was called');
+});
 
 app.listen(port, function(){
     console.log("LISTENING ON PORT " + port);

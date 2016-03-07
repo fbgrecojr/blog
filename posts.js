@@ -1,6 +1,8 @@
 (function(){
 
-	var Post = Backbone.Model.extend({}),
+	var Post = Backbone.Model.extend({
+		url: 'blog'
+	}),
 
 		Input = Backbone.Model.extend({}),
 
@@ -17,11 +19,12 @@
 				var title 	= this.$('input[name=title]').val(),
 					content = this.$('textarea[name=content]').val();
 
-					if(title.length > 0 && content.length> 0){
+					if(title.length > 0 && content.length > 0){
 						this.$('input[name=title]').val('');
 						this.$('textarea[name=content]').val('');
 
 						var newPost = new Post({
+								id: Date.now(),
 								title: title,
 								content: content,
 								date: function(){
@@ -34,6 +37,10 @@
 							});
 
 							$('div#blog-item-area').append(newView.render().el);
+
+							console.log(newPost.id);
+
+							newPost.save();
 					}
 			},
 
