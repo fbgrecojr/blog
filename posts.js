@@ -5,15 +5,8 @@
 		Input = Backbone.Model.extend({}),
 
 		InputView = Backbone.View.extend({
-
-			tag: 'div',
-
 			className: 'input',
-
-			template: _.template('<form>' + 
-				'<input class=content name=title id=title placeholder=Title type=text autocomplete=off autofocus/> &nbsp;' + 
-				' <textarea name=content placeholder=Content rows=5 class=content type=text autocomplete=off/></form>'),
-
+			template: _.template($('#input-template').html()),
 			events: {
 				submit: 'new'
 			},
@@ -53,20 +46,12 @@
 		}),
 
 		PostView = Backbone.View.extend({
-
-			tag: 'div',
-
 			className: 'post',
-
-			template: _.template('<div class=wrapper><div class=post-title><%= title %></div><div class=date><%= date() %></div></div><div class=post-content><%= content %></div>'),
-
+			template: _.template($('#post-template').html()),
 			render: function(){
-
 				this.$el.html(this.template(this.model.toJSON()));
-
 				return this;
 			}
-
 		}),
 
 		input = new Input({}),

@@ -10,6 +10,13 @@
 
 				printName(0);
 			},
+			events: {
+				'click': 'replay'
+			},
+			replay: function(){
+				this.model.set('content', 'T');
+				printName(0);
+			},
 			template: _.template('<h1><%= content %></h1>'),
 			render: function(){
 				this.$el.html(this.template(this.model.toJSON()));
